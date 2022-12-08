@@ -33,10 +33,9 @@ No experience as a Front-end developer
 # Education:
 * **University**: Volgograd Institute of Architecture and Construction VolgSTU, Design engineer
 * **Courses:** 
-+ learn.javascript.ru
-+ FreeCodeCamp
-+ JavaScript - A Complete JavaScript Course for Beginners. 
-Bogdan Stashchuk
+    + learn.javascript.ru
+    + FreeCodeCamp
+    + JavaScript - A Complete JavaScript Course for Beginners. Bogdan Stashchuk
 ****************
 # Knowledge of the English lenguage:
 A2(I can read documentation in English, occasionally using a translator. I speak in simple sentences. Can understand simple sentences by ear)
