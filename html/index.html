@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/rsschool-cv/css/style.css">
+    <link rel='icon' href="/rsschool-cv/img/iconCV.ico">
+    <title>CV Dmitriy Golovko</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="navigation-menu">
+                <li class="navigation-item"><a href="#aboutMe">About me</a></li>
+                <li class="navigation-item"><a href="#contact">My Contact</a></li>
+                <li class="navigation-item"><a href="#skills">My Skills</a></li>
+                <li class="navigation-item"><a href="#education">My Education</a></li>
+                <li class="navigation-item"><a href="#exampleCode">My Code</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="leftSide">
+            <section class="img">
+                <img src="/rsschool-cv/img/MyImg.jpg" alt="My photo" class="img">
+            </section>
+            <section class="AboutMe" id="aboutMe">
+                <h2 class="sectionTitle">About me</h2>
+                <p>My goal is to constantly evolve in the world of computer technology. For me, programming is about striving to continually develop and create new things. My current job does not allow me to get better, so I chose programming as a way to a better life and to improve myself.</p>
+            </section>
+            <section class="contact" id="contact">
+                <h2 class="sectionTitle">My Contact</h2>
+                <ul>
+                    <li><span class="spanCntct">Phone:</span> +7(999)-888-777-22</li>
+                    <li><span class="spanCntct">E-mail:</span> dim.golowcko2014@yandex.ru</li>
+                    <li><span class="spanCntct">Adress:</span> Russia, Volgograd</li>
+                </ul>
+            </section>
+        </div>
+        <div class="rightSide">
+            <h1>Dmitriy Golovko</h1>
+            <section class="skills" id="skills">
+                <h2 class="sectionTitle">My Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript(base)</li>
+                    <li>Git(base)</li>
+                    <li>English - A2(I can read documentation in English, occasionally using a translator. I speak in simple sentences. Can understand simple sentences by ear)</li>
+                </ul>
+            </section>
+
+            <section class="education" id="education">
+                <h2 class="sectionTitle">My Education</h2>
+                <ul class="educationList">
+                    <li><span>University:</span><br> Institute of Architecture and Construction VolgSTU, Design engineer</li>
+                    <li><span>Courses:</span>
+                    <ul class="educationList">
+                        <li>learn.javascript.ru</li>
+                        <li>FreeCodeCamp</li>
+                        <li>JavaScript - A Complete JavaScript Course for Beginners. Bogdan Stashchuk</li>
+                        <li>Code-basics: HTML,CSS</li>
+                    </ul>
+                </li>
+                    
+                </ul>
+            </section>
+
+            <section class="Code" id="exampleCode">
+                <h2 class="sectionTitle">Code example</h2>
+                <pre>
+                    <code data-language = "javascript">
+                        const progressId = document.querySelector("#progress");
+                        const btnPrevId = document.querySelector("#prev");
+                        const btnNextId = document.querySelector("#next");
+                        const circles = document.querySelectorAll(".circle");
+                        let width = 0;
+                        let currentActive = 1;
+                        btnNextId.addEventListener("click", () => {
+                          currentActive++;
+                          update();
+                          progressId.style.width = `${(width += 33)}%`;
+                          count();
+                        });
+                        btnPrevId.addEventListener("click", () => {
+                          currentActive--;
+                          update();
+                          progressId.style.width = `${(width -= 33)}%`;
+                          count();
+                        });
+                        
+                        function count() {
+                          if (width === 99) {
+                            btnNextId.disabled = true;
+                          } else {
+                            btnNextId.disabled = false;
+                          }
+                          if (width === 0) {
+                            btnPrevId.disabled = true;
+                          } else {
+                            btnPrevId.disabled = false;
+                          }
+                        }
+                        
+                        function update() {
+                          circles.forEach((circle, idx) => {
+                            if (idx < currentActive) {
+                              circle.classList.add("active");
+                            } else {
+                              circle.classList.remove("active");
+                            }
+                          });
+                        }
+                    </code>
+                  </pre>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+      <div class='container'>
+        <div class="footer-container">
+          <div class="footer-item">
+            <a href="https://github.com/wwwWebcom" target="_blank">
+              <img src="/rsschool-cv/img/github-mark.svg" alt="github logo">
+            </a>
+          </div>
+          <section class="footer-item">
+            <a href="https://rs.school/js/" target="_blank">
+              <img src="/rsschool-cv/img/rs_school_js.svg" alt="rs-school logo">
+            </a>
+          </section>
+          <section class="footer-date">
+            <h2 class="h2footer">Created 2022</h2>
+          </section>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
