@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h2 {
+    color: #636060;
+}
+a {
+    text-decoration: none;  
+}
+/* Контейнер */
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1440px;
+    background-color: #EDF2EC;
+    font-family: 'Inika', serif;
+}
+
+/* Навигация */
+
+
+nav {
+    width: 1440px;
+    padding: 42px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.navigation {
+    display: flex;
+}
+.logo {
+    display: flex;
+}
+.icon {
+    position: relative;
+    bottom: 5px;
+}
+li.item a {
+    color: #000000;
+}
+.item.item1 a {
+    color: #E06733;
+}
+
+li.item {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 46px;
+}
+
+li.item a:hover {
+    color: #E06733;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+
+/* Welcome */
+
+.welcome__content {
+    display: flex;
+    font-family: "inter", sans-serif ;
+    padding: 62px 109px 62px 109px;
+}
+.leafs {
+    margin-right: 224px;
+}
+.welcome__content__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome__content__main__head {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+}
+.welcome__content__main__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 45px 0;
+    font-weight: 400;
+}
+.plants__green {
+    color: #499A18; 
+}
+.welcome__content__main__btn {
+    text-transform:uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 158px;
+    height: 44px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+}
+.welcome__content__main__btn:hover {
+    cursor: pointer;
+    background-color: #E06733;
+}
+
+/* About */
+.about {
+    background-color: #ffffff;
+}
+.about__content {
+    display: flex;
+    font-family: "inter", sans-serif ;
+    flex-direction: row-reverse;
+    padding: 109px 94px;
+}
+.plant {
+    margin-left: 153px;
+}
+.about__content__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 605px;
+}
+
+.about__content__main__head {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    width: 463px;   
+}
+.green {
+    color:#499A18;
+}
+.orange {
+    color: #E06733;
+}
+.about__content__main__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 45px 0;
+    font-weight: 400;
+    color: #636060;
+}
+
+/* Services */
+
+.service__content {
+    display: flex;
+    flex-direction: column;
+    font-family: "inter", sans-serif ;
+    padding: 40px 324px 0px 109px;
+}
+.service__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__header__head {
+    display: inline-block;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    width: 306px;
+}
+.servicebtn {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    width: 161px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.servicebtn:hover {
+    cursor: pointer;
+    background-color: #E06733;
+    color: #000000;
+}
+
+.service__content__main {
+    width: 1230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-bottom: 65px;
+}
+.serviceitem {
+    margin-bottom: 55px;
+    border: 1px solid #E3E1D5;
+    border-radius: 30px 30px 20px 20px;
+    text-align: center;
+}
+.serviceitem h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #E06733;
+}
+.serviceitem p {
+    padding: 10px 30px 35px 30px;
+}
+.serviceimg {
+    width: 100%;
+}
+
+/* Prices */
+.prices {
+    width: inherit;
+    background-color: #ffffff;
+    padding: 40px 109px 0px 109px;
+    height: 560px;
+    font-family: "inter", sans-serif ;
+}
+.prices__content {
+    display: flex;
+    justify-content: space-between;
+}
+.prices__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.prices__header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 452px;
+}
+.prices__h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    text-align: end;
+}
+.prices__item {
+    margin-top: 60px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    padding: 34px 41px;
+}
+.pricesitem {
+    background-color:#EDF2EC;
+    border-radius: 20px;
+    padding: 16px 40px 16px 40px;
+}
+.paragraph {
+    line-height: 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    width: 100px;
+}
+.pricesitem::after {
+    content:url('accordion_btn.png');
+    padding-left: 54px;
+    vertical-align: middle;
+}
+
+.pricesitem.standart {
+    margin: 32px 0px;
+}
+.linkContactUs {
+    margin: 40px 0;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #E06733;
+    padding: 12px 35px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.linkContactUs:hover {
+    cursor: pointer;
+    background-color: #E06733;
+    color: #010201;
+}
+
+/*Contact US*/
+.contactUs {
+    padding: 60px 109px 0px 109px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactUs__header {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+.contactUsitem {
+    margin-top: 80px;
+    background-color:#D6E7D2;
+    padding: 13px 0px 13px 20px;
+    line-height: 25px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    height: 50px;
+    width: 450px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    color:#717171
+}
+.contactUsitem::after {
+    content: url("accordion_btn (1).png");
+    padding-left: 330px;
+    vertical-align: middle;
+}
+
+/*footer*/
+
+footer {
+    padding: 0px 109px 0px 109px;
+    background-color: #ffffff;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright_year_git {
+    display: flex;
+}
+
+.footer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    padding-right: 20px;
+}
